@@ -1,6 +1,9 @@
 .feedbar{
-    flex: 3;
+    flex: 5;
+    overflow-y: scroll;
+    position: static;
 }
+
 .feedwrapper{
     padding: 20px;
 }

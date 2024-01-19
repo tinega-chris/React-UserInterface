@@ -1,19 +1,26 @@
 import './Post.css'
 import {MoreVert} from "@mui/icons-material"
 import {  Users } from "../../dummyData"
+import { useState } from 'react'
 
 export default function Post({post}) {
-  const user= Users.filter((u)=>u.id===1)
-  console.log(user[0].username)
+  const[like, setLike]= useState(post.like)
+  const[isLiked, setIsLiked]=useState(false)
+
+const likeHandler=()=>{
+  setLike(isLiked ? like-1:like+1)
+  setIsLiked(!isLiked)
+}
   return (
     <div className='post'>
    <div className="postWrapper">
     <div className="postTop">
     <div className="postTopLeft">
       
-    <img src="./Assets/Webcam/kuku.jpg" alt="" className="postProfileImg" />
+    <img src={Users.filter((u)=>u.id===post.userId)[0].profilePicture} alt="" className="postProfileImg" />
     
     <span className="postUsername">
+    {Users.filter((u)=>u.id===post?.userId)[0].username}
       </span>
     <span className="postDate">{post.date}</span>
     </div>
@@ -22,17 +29,17 @@ export default function Post({post}) {
     </div>
     </div>
     <div className="postCenter">
-      <span className="postText">it is my first image</span>
+      <span className="postText">{post?.desc}</span>
       <img src={post.photo} alt="" className="postImg" />
     </div>
     <div className="postBottom">
       <div className="postBottomLeft">
-        <img src="./Assets/Webcam/like.png" alt="" className="likeIcon" />
-        <img src="./Assets/Webcam/heart.png" alt="" className="likeIcon" />
-       <span className="postLikeCounter">{post.like}</span>
+        <img src="./Assets/Webcam/like.png" alt="" className="likeIcon" onClick={likeHandler}/>
+        <img src="./Assets/Webcam/heart.png" alt="" className="likeIcon" onClick={likeHandler} />
+       <span className="postLikeCounter">{like}</span>
       </div>
       <div className="postBottomRight">
-        <span className="postCommentText">{post.Comment}</span>
+        <span className="postCommentText">{post.Comment} comments</span>
       </div>
     </div>
    </div>

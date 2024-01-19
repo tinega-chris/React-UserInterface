@@ -1,19 +1,21 @@
 .sidebar {
   flex: 3;
-  height: calc(100vh -50px);
+  height: calc(100vh - 50px);
   background-color: yellowgreen;
   overflow-y: scroll;
+  position: sticky;
+  top: 50px;
 }
 ::-webkit-scrollbar{
-    width: 8px;
+  width: 8px;
 }
 ::-webkit-scrollbar-track{
-    width: 5px;
-    background-color: #f1f1f1;
+  width: 5px;
+  background-color: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: rgb(179,179,179);
-    width: 5px;
+  background-color: rgb(179,179,179);
+  width: 5px;
 }
 .sidebarWrapper {
   padding: 20px;

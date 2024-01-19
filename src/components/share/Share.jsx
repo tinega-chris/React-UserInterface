@@ -7,7 +7,7 @@ export default function Share() {
                 <div className="shareTop">
                    <img src="./Assets/Webcam/virginiaclasssubmarine.webp" alt="" className="shareProfileImg" />
                    
-                   <input type="text" placeholder='what is on your mind' className="shareInput" />
+                   <input type="text" placeholder='what`s your mind Tinega?' className="shareInput" />
                 </div>
                 <hr className="shareHr" />
                 <div className="shareBottom">

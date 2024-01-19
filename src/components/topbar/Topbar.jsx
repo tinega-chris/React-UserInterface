@@ -2,14 +2,14 @@ import "./Topbar.css"
 import { Search,Person,Chat,Notifications} from "@mui/icons-material"
 function Topbar() {
     return (
-        <div className="TopbarContainer">
+        <div className="topbarContainer">
         <div className="topbarLeft">
             <span className="logo">Tinegasocial</span>
         </div>
         <div className="topbarCentre">
             <div className="searchbar">
                 <Search className="searchIcon"/>
-                <input placeholder="search for friends videos or posts"
+                <input placeholder="search for friends,videos or posts"
                  className="searchInput" />
             </div>
         </div>

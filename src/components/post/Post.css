@@ -1,8 +1,8 @@
 .post{
     width: 100%;
     border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 21px 11px rgba(0, 0, 0, 0.83) inset;
-  -moz-box-shadow: 0px 0px 21px 11px rgba(0, 0, 0, 0.83) inset;
+  -webkit-box-shadow: 0px 0px 21px 11px rgba(0, 0, 0, 0.83);
+  box-shadow: 0px 0px 21px 11px rgba(0, 0, 0, 0.83) ;
   margin: 30px 0;
 }
 .postWrapper{
@@ -70,4 +70,10 @@
   justify-content: space-between;
 
     
+}
+.postCommentText{
+    font-weight: 400;
+    font-size: 15px;
+    border-bottom: 1px dashed gray;
+    cursor: pointer;
 }
