@@ -8,7 +8,7 @@ export default function Rightbar({ profile }) {
         <div className="birthdayContainer">
           <img src="Assets/Webcam/gift-box-color-icon.svg" alt="" className="birthdayImg" />
           <span className="birthdayText">
-            <b>Tinega</b> foa and other 3 friends have a birthday today</span>
+            <b>Tinega, foa</b>  and <b>other 3 friends </b> have a birthday today</span>
 
         </div>
         <img src="Assets/Webcam/photos.jpg" alt="" className="rightbarAd" />
